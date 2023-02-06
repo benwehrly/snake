@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  width: fit-content;
+  /* gap: 1px; */
+  background-color: rgb(40, 40, 40);
+  margin: 10px auto;
+  border: 4px inset;
+}
+
+.cell {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+}
+
+.snake {
+  background-color: rgb(200,255,200);
+  box-shadow: 0 0 1rem 2px green;
+  z-index: 2;
+
+}
+
+.food {
+  background-color: rgb(255,200,200);
+  z-index: 2;
+  box-shadow: 0 0 1rem 3px red;
+}
+
